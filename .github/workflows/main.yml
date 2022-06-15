@@ -29,5 +29,5 @@ jobs:
           # requirements-file: project/requirements.txt
           dags-path: dags
           dags-test-folder: tests
-          # var-file: project/var.json
+          var-file: var.json
 
