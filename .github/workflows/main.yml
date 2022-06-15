@@ -26,8 +26,8 @@ jobs:
         # accessToken: ${{ secrets.GITHUB_TOKEN }}
       uses: zimthug/airflow-dags-test-action@v2.2.2
       with:
-          requirements-file: /requirements.txt
-          dags-path: /dags
-          dags-test-folder: /tests
+          requirements-file: requirements.txt
+          dags-path: dags
+          dags-test-folder: tests
           var-file: var.json
 
