@@ -23,5 +23,5 @@ jobs:
         # requirementsFile: tests/requirements.txt
         dagPaths: dags
         # varFile: tests/var.json
-        # accessToken: ${{ secrets.GITHUB_TOKEN }}
+        accessToken: ${{ secrets.GITHUB_TOKEN }}
 
