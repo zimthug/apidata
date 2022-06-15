@@ -1,0 +1,1 @@
+select 3 integration_id, 'shona_taxi' partner, 'shona_taxi' application, 'trips' endpoint
