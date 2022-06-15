@@ -24,7 +24,7 @@ jobs:
         # dagPaths: dags
         # varFile: tests/var.json
         # accessToken: ${{ secrets.GITHUB_TOKEN }}
-      uses: zimthug/airflow-dags-test-action
+      uses: zimthug/airflow-dags-test-action@master
       with:
           requirements-file: requirements.txt
           dags-path: dags
