@@ -66,8 +66,8 @@ with DAG(
     description='Shona Taxi data integration DAG',
     schedule_interval='@daily',
     start_date=datetime(2022, 1, 1),
-    tags=['untapped-global', 'data-integration',
-          'shona', 'development'],
+    # tags=['untapped-global', 'data-integration',
+    #       'shona', 'development'],
 ) as dag:
 
     initalize_environment = PythonOperator(
