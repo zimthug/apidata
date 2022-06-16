@@ -17,14 +17,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: 'Validate DAGs'
-      # uses: jayamanikharyono/airflow-dag-action@v2.0
-      # with:
-        # requirementsFile: tests/requirements.txt
-        # dagPaths: dags
-        # varFile: tests/var.json
-        # accessToken: ${{ secrets.GITHUB_TOKEN }}
-      uses: zimthug/airflow-dags-test-action
+      uses: zimthug/airflow-dags-test-action@master
       with:
           requirements-file: requirements.txt
           dags-path: dags
